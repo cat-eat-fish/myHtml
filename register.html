@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<style>
+			.myform{
+				width: 400px;
+				height: 240px;
+				border: 1px solid #ccc;
+				border-radius: 10px 10px 0 0;
+				margin: 100px auto;
+			}
+			.register-top{
+				width: 100%;
+				height: 50px;
+				background: #00FFFF;
+				font-size: 30px;
+				text-indent: 2em;
+				color: blue;
+			}
+			.myform form{
+				width: 100%;
+				margin:50px auto 0;
+				display: flex;
+				flex-flow: column;
+				
+			}
+			.myform form input,.myform form span,.myform form label{
+				width: 30%;
+				display: inline-block;
+				text-align: center;
+			}
+			.myform form input{
+				text-align: left;
+			}
+			.myform form span{
+				font-size: 14px;
+				color: #666;
+			}
+			.myform form input[type='submit']{
+				width: 70px;
+				margin: 20px 0 0 25px;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="myform">
+			<div class="register-top">注册页</div>
+			<form action="网页布局.html" method="get">
+				<div>
+					<label for="name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
+					<input name="myname" id="name" type="text" />
+					<span>格式: 中文</span>
+				</div>
+				<div>
+					<label for="tel">联系方式:</label>
+					<input name="tel" id="tel" type="text" />
+					<span>格式: 11位手机号</span>
+				</div>
+				<div>
+					<label for="com">所在公司:</label>
+					<input name="com" id="com" type="text" />
+					<span></span>
+				</div>
+				<div>
+					<label for="dut">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务:</label>
+					<input name="dut" id="dut" type="text" />
+					<span></span>
+				</div>
+				<input type="submit" value="提交"/>
+			</form>
+		</div>
+	</body>
+</html>
