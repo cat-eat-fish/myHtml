@@ -1,0 +1,79 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: rgb(55,76,86);
+		}
+		textarea{
+			display: none;
+		}
+		.photo{
+			width: 320px;
+			height: 600px;
+			margin: 10px auto;
+			background: #000;
+			font-family: "微软雅黑";
+			padding: 5px;
+			background-color: #222;
+			border-radius: 20px;
+			box-shadow: 0 0 7px #fff;
+			overflow: hidden;
+		}
+		.top{
+			width: 320px;
+			height: 23px;
+			background: url(../img/1.png) no-repeat;
+		}
+		.singer{
+			width: 320px;
+			font-size: 14px;
+			color: #ccc;
+			text-align: center;
+			line-height: 40px;
+		}
+		.title{
+			width: 320px;
+			height: 30px;
+			font-size: 20px;
+			color: #ccc;
+			font-weight: bold;
+			line-height: 30px;
+			background: url(../img/2.png) no-repeat;
+			text-align: center;
+			
+		}
+		.play{
+			width: 190px;
+			height: 190px;
+			background: url(../img/3.png) no-repeat;
+			margin: auto;
+			border-radius: 50%;
+		}
+		.lrc{
+			height: 285px;
+			width: 300px;
+			margin: 20px auto;
+			text-align: center;
+			overflow: hidden;
+			color: #ccc;
+		}
+		.lrc p{
+			line-height: 20px;
+			font-size: 12px;
+		}
+		.content{
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		.play.rotate{
+			animation: rot 5s linear infinite;
+			-moz-animation: rot 5s linear infinite;
+			-webkit-animation: rot 5s linear infinite;
+			-moz-animation: rot 5s linear infinite;
+		}
+		@keyframes rot{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
